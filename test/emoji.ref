@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>This is a test</h1>
+    <div class="admonition admonition-note">
+      <div class="admonition-heading">
+        <h5>
+          <div class="admonition-icon">ℹ️</div>note</h5>
+      </div>
+      <div class="admonition-content">
+        <p>This is what a note looks like</p>
+      </div>
+    </div>
+    <div class="admonition admonition-tip">
+      <div class="admonition-heading">
+        <h5>
+          <div class="admonition-icon">💡</div>tip</h5>
+      </div>
+      <div class="admonition-content">
+        <p>It works great with docusaurus 2.0</p>
+      </div>
+    </div>
+    <div class="admonition admonition-caution">
+      <div class="admonition-heading">
+        <h5>
+          <div class="admonition-icon">🔥</div>you can set your own title</h5>
+      </div>
+      <div class="admonition-content">
+        <p>it replaces the default title</p>
+      </div>
+    </div>
+    <div class="admonition admonition-important">
+      <div class="admonition-heading">
+        <h5>
+          <div class="admonition-icon">❗️</div>credit</h5>
+      </div>
+      <div class="admonition-content">
+        <p>Based on <code>remarkable-admonitions</code></p>
+        <p>SVG Icons by GitHub Octicons</p>
+      </div>
+    </div>
+    <div class="admonition admonition-warning">
+      <div class="admonition-heading">
+        <h5>
+          <div class="admonition-icon">⚠️</div>warning</h5>
+      </div>
+      <div class="admonition-content">
+        <p>You can't nest them</p>
+        <ul>
+          <li>but</li>
+          <li>you</li>
+          <li>can</li>
+          <li>nest</li>
+          <li>other</li>
+          <li>markdown</li>
+        </ul>
+        <pre><code class="language-javascript">// you can even use block elements
+</code></pre>
+      </div>
+    </div>
+    <div class="admonition admonition-custom">
+      <div class="admonition-heading">
+        <h5>
+          <div class="admonition-icon">💻</div>you can make your own custom types</h5>
+      </div>
+      <div class="admonition-content">
+        <p>The icon, keyword, and emoji can be set in the plugin options</p>
+      </div>
+    </div>
+  </body>
+</html>

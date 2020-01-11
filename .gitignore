@@ -1,0 +1,6 @@
+# node modules
+node_modules
+# files generated during testing
+test/*.html
+# editor configuration files
+.vscode

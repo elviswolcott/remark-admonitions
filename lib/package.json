@@ -1,0 +1,31 @@
+{
+  "name": "remark-admonitions",
+  "version": "1.0.0",
+  "description": "Add admonitions support to remark",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elviswolcott/remark-admonitions.git"
+  },
+  "keywords": [
+    "remark",
+    "docusaurus",
+    "admonitions",
+    "markdown",
+    "mdx",
+    "plugin"
+  ],
+  "author": "Elvis Wolcott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elviswolcott/remark-admonitions/issues"
+  },
+  "homepage": "https://github.com/elviswolcott/remark-admonitions#readme",
+  "dependencies": {
+    "rehype-parse": "^6.0.2",
+    "unified": "^8.4.2"
+  }
+}
