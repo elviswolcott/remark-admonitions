@@ -1,2 +1,6 @@
 .vscode
 test
+.eslintignore
+.eslintrc
+.prettierignore
+.travis.yml
