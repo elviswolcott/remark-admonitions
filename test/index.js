@@ -10,6 +10,7 @@ const report = require('vfile-reporter')
 const diff = require('diff')
 const colors = require('colors/safe')
 
+let exit = 0;
 // naive diff, works fine for short files
 const diffVfile = (a, b) => {
   if (a.toString() !== b.toString()) {
@@ -38,7 +39,7 @@ const test = (options, filename) => {
     .use(doc)
     .use(format)
     .use(html)
-    .process(vfile.readSync('./sample.md'), (error, result) => {
+    .process(vfile.readSync('./test/sample.md'), (error, result) => {
       console.error(report(error || result))
       if (error) {
         throw error
@@ -46,11 +47,12 @@ const test = (options, filename) => {
       if (result) {
         result.basename = `${filename}.html`
         vfile.writeSync(result)
-        const ref = vfile.readSync(`./${filename}.ref`)
+        const ref = vfile.readSync(`./test/${filename}.ref`)
         const { same, pretty } = diffVfile(result, ref)
         if (same) {
           console.log(`${colors.red('Files do not match')} for ${filename} test.`)
           console.log(pretty)
+          exit = 2;
         } else {
           console.log(`${colors.green('Files match')} for ${filename} test.`)
         }
@@ -70,9 +72,6 @@ const pluginOptions = {
 }
 
 test(pluginOptions, 'svg')
-test({...pluginOptions, icons: 'empji'}, 'emoji')
+test({...pluginOptions, icons: 'emoji'}, 'emoji')
 
-process.on('uncaughtException', function (err) {
-  console.log(err)
-  //process.exit(2)
-})
+process.exit(exit)
