@@ -40,7 +40,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
               <path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path>
             </svg>
-          </div>you can set your own title</h5>
+          </div>you can set <em>your own</em> title</h5>
       </div>
       <div class="admonition-content">
         <p>it replaces the default title</p>
@@ -90,10 +90,10 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"></path>
             </svg>
-          </div>you can make your own custom types</h5>
+          </div>custom</h5>
       </div>
       <div class="admonition-content">
-        <p>The icon, keyword, and emoji can be set in the plugin options</p>
+        <p>You can make your own custom types. The icon, keyword, and emoji can be set in the plugin options and they can be styled separately.</p>
       </div>
     </div>
   </body>

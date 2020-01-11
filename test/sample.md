@@ -7,7 +7,7 @@ This is what a note looks like
 It works great with docusaurus 2.0
 :::
 
-:::caution you can set your own title
+:::caution you can set *your own* title
 it replaces the default title
 :::
 
@@ -31,6 +31,6 @@ You can't nest them
 ```
 :::
 
-:::custom you can make your own custom types
-The icon, keyword, and emoji can be set in the plugin options
+:::custom
+You can make your own custom types. The icon, keyword, and emoji can be set in the plugin options and they can be styled separately.
 :::
