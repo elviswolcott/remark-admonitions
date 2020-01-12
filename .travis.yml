@@ -9,7 +9,7 @@ jobs:
     script: npm run lint
     # because the package isn't being compiled in any way, install and script are skipped
   - stage: release
-    if: branch = master AND tag IS present
+    if: type = push AND tag IS present
     install: true
     script: skip
     deploy:
