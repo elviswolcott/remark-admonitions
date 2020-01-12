@@ -28,7 +28,7 @@
     <div class="admonition admonition-caution">
       <div class="admonition-heading">
         <h5>
-          <div class="admonition-icon">🔥</div>you can set your own title</h5>
+          <div class="admonition-icon">🔥</div>you can set <em>your own</em> title</h5>
       </div>
       <div class="admonition-content">
         <p>it replaces the default title</p>
@@ -66,10 +66,10 @@
     <div class="admonition admonition-custom">
       <div class="admonition-heading">
         <h5>
-          <div class="admonition-icon">💻</div>you can make your own custom types</h5>
+          <div class="admonition-icon">💻</div>custom</h5>
       </div>
       <div class="admonition-content">
-        <p>The icon, keyword, and emoji can be set in the plugin options</p>
+        <p>You can make your own custom types. The icon, keyword, and emoji can be set in the plugin options and they can be styled separately.</p>
       </div>
     </div>
   </body>
