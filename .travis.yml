@@ -7,7 +7,6 @@ jobs:
     script: npm test
   - stage: lint
     script: npm run lint
-    # because the package isn't being compiled in any way, install and script are skipped
   - stage: release
     if: type = push AND tag IS present
     install: true
@@ -21,8 +20,15 @@ jobs:
         tags: true
         repo: elviswolcott/remark-admonitions
         branch: master
-
 stages:
 - test
 - lint
 - release
+deploy:
+  provider: npm
+  email: elviswolcott@gmail.com
+  api_key:
+    secure: TtagjPvj4tyrRRNOHyNXPX5pp5qRVYZz3jl/Lj+/e99cdGhazGp2lqULenhCbG9Cl3HOVU7iC7R2SrGInVXjsP1glQKj7eTeAHQZDsEEiBKS2hgB0EtjxGAWVgSnxGE4y6oEnHxQVzNQBBESD4DNfAoOKuGrb5Ba6VLX7WS7WvZ+AyQOZqeQTlNOCGfixFIfnPj/GC5wAt8L3REJsLV7vQGijUB9G6urci0mUEqt24Q6bw28rhyMEf9UFPp9zgJCOmUE+niUCSLXLNo+mbR0XuUmBXfs99JLmMmqU6EHF2c0BS1uhjEsOfu+AwGdSgHN5hSQk1Va8kvZy/vGuLAkXR8lk9PBZWrvzZyc64dBkQgrD/nosilfwBGNAGz64OtG8L7+ZQFWiZoQ8YORmRdelHobfVCel+Q8C2KydTmxHRsINMH+SEsb105la6Zd5jleYeaGsno5RPieSmrXhodPxY7RzJeZbJp9Y7/L3HQOZcyn99wkxEzbWj0ivB2QuDrCpsA1SM91Vf7v5A760d3bO2xLJfCWFqciMmcbJlUyroampMrO0rj+fknJABjJOcHrKkkgugiWGfWlDtffN0PGBuinw3dpCJsYIGHwWQ/BivaznRmeeNd0eZuejhBF20B5CsOibemamA/5LkCL4pXzu+dLjyat7v4HDgZaxuPrCW0=
+  on:
+    tags: true
+    repo: elviswolcott/remark-admonitions
