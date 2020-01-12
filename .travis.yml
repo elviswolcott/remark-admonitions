@@ -8,6 +8,7 @@ jobs:
   - stage: lint
     script: npm run lint
   - stage: release
+    if: branch = master AND tag IS present AND type = push
     script: echo "deploying tag to NPM"
     deploy:
       provider: npm
