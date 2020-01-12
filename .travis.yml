@@ -1,12 +1,25 @@
 language: node_js
 node_js:
- - "node"
+- node
 jobs:
   include:
-    - stage: test
-      script: npm test
-    - stage: lint
-      script: npm run lint
+  - stage: test
+    script: npm test
+  - stage: lint
+    script: npm run lint
+  - stage: release
+    script: echo "deploying tag to NPM"
+    deploy:
+      provider: npm
+      email: elviswolcott@gmail.com
+      api_key:
+        secure: rKHfe3yyPjuPr7NC8prPOagTGyJjkP9g+CIFCX6X64d0h1LNZGww1X/d42PC5EOYbb7Xlxdbi170rbmJxuXqSWvzdQC92+MXgUt9qBZYnW/24f1nELhppw5t6OQaDHTxb91RKu5WnATIk4fRHiEiCykk5wMnPHr1m6MebO+qGlq+eg1NGTtiJ8JYXXZvVyQyfDP0GZt53foL4c3ZdO7i7MJEwR1UD6zXOVeougvomygrQEATvJL7cTTwYtRpY6DMFx3lV5qh8BaVyGixrgU32B4+YSnbHQXbwcLwhnhOWCJ9JLYd02/yl4jK/oYAMK117C4xFv5TwzFM9XpAvEuj8V8rqxV59sqaJi1BejeUK2n6IPtaej1W974z41PQNT+16XtUReP1Gr1FuJfHDbtR61644koElre5GNuTvs7PteWOrcabWOOWzzXg8i7ZYbnO9huFA1KGDFF2Ya3ecUjVhZ0/jHolSL695zPQLdMg189ol5v3J8pyBnd5Hja+/8NX2bApEe3Xo6zj/ylknJBwdNCRqKwhVE+jdOtP2vutNfyKbcf+jqV7o+T9t2Ca9JutqG3KaF01mG9BIjzikQONh6s1RbRlfg6qwHwDunOM0JgHTqC51FZB4csFLTWV+1OXWDwkQWoFfDk5wwxuENjrzHIEGct4qX2HONiOH2hN6v8=
+      on:
+        tags: true
+        repo: elviswolcott/remark-admonitions
+        branch: master
+
 stages:
-  - test
-  - lint
+- test
+- lint
+- release
