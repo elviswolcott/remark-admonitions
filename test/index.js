@@ -88,5 +88,6 @@ const pluginOptions = {
 
 test(pluginOptions, "svg");
 test({ ...pluginOptions, icons: "emoji" }, "emoji");
+test({ ...pluginOptions, icons: "none" }, "none");
 
 process.exit(exit);
