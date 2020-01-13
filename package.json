@@ -33,7 +33,8 @@
   "homepage": "https://github.com/elviswolcott/remark-admonitions#readme",
   "dependencies": {
     "rehype-parse": "^6.0.2",
-    "unified": "^8.4.2"
+    "unified": "^8.4.2",
+    "unist-util-visit": "^2.0.1"
   },
   "devDependencies": {
     "colors": "^1.4.0",
