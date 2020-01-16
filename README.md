@@ -1,5 +1,5 @@
-![Travis CI Build Status](https://travis-ci.com/elviswolcott/remark-admonitions.svg?branch=master)
-![npm](https://img.shields.io/npm/v/remark-admonitions?color=CC3534)
+[![Travis (.com)](https://img.shields.io/travis/com/elviswolcott/remark-admonitions?logo=travis)](https://travis-ci.com/elviswolcott/remark-admonitions)
+[![npm](https://img.shields.io/npm/v/remark-admonitions?label=remark-admonitions&logo=npm)](https://www.npmjs.com/package/remark-admonitions)
 # remark-admonitions
 
 A [remark](https://github.com/remarkjs/remark) plugin for admonitions with Docusaurus v2 support.
