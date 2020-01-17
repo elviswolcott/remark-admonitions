@@ -28,7 +28,7 @@
     <div class="admonition admonition-caution">
       <div class="admonition-heading">
         <h5>
-          <div class="admonition-icon">🔥</div>you can set <em>your own</em> title</h5>
+          <div class="admonition-icon">⚠️</div>you can set <em>your own</em> title</h5>
       </div>
       <div class="admonition-content">
         <p>it replaces the default title</p>
@@ -47,7 +47,7 @@
     <div class="admonition admonition-warning">
       <div class="admonition-heading">
         <h5>
-          <div class="admonition-icon">⚠️</div>warning</h5>
+          <div class="admonition-icon">🔥</div>warning</h5>
       </div>
       <div class="admonition-content">
         <p>You can't nest them</p>
