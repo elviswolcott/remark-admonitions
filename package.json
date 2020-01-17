@@ -40,7 +40,7 @@
     "colors": "^1.4.0",
     "compiler": "^0.1.2",
     "diff": "^4.0.1",
-    "eslint": "^6.1.0",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.2",
@@ -52,7 +52,6 @@
     "remark-parse": "^7.0.2",
     "remark-rehype": "^5.0.0",
     "to-vfile": "^6.0.0",
-    "unified": "^8.4.2",
     "vfile-reporter": "^6.0.0"
   }
 }
