@@ -1,11 +1,29 @@
-/* Based on the styling for alerts */
+/* base admonitions variables of off infima variables */
+:root {
+  --ra-admonition-background-color: var(--ifm-alert-background-color);
+  --ra-admonition-border-width: var(--ifm-alert-border-width);
+  --ra-admonition-border-color: var(--ifm-alert-border-color);
+  --ra-admonition-border-radius: var(--ifm-alert-border-radius);
+  --ra-admonition-color: var(--ifm-alert-color);
+  --ra-admonition-padding-vertical: var(--ifm-alert-padding-vertical);
+  --ra-admonition-padding-horizontal: var(--ifm-alert-padding-horizontal);
+  --ra-color-note: var(--ifm-color-secondary);
+  --ra-color-important: var(--ifm-color-info);
+  --ra-color-tip: var(--ifm-color-success);
+  --ra-color-caution: var(--ifm-color-warning);
+  --ra-color-warning: var(--ifm-color-danger);
+  --ra-color-text-dark: var(--ifm-color-fray-900);
+}
+
+/* apply variables to admonitions */
+
 .admonition {
-  background-color: var(--ifm-alert-background-color);
-  border: var(--ifm-alert-border-width) solid var(--ifm-alert-border-color);
-  border-radius: var(--ifm-alert-border-radius);
+  background-color: var(--ra-admonition-background-color);
+  border: var(--ra-admonition-border-width) solid var(--ra-admonition-border-color);
+  border-radius: var(--ra-admonition-border-radius);
   box-sizing: border-box;
-  color: var(--ifm-alert-color);
-  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+  color: var(--ra-admonition-color);
+  padding: var(--ra-admonition-padding-vertical) var(--ra-admonition-padding-horizontal);
   margin-bottom: 1em;
 }
 
@@ -26,65 +44,39 @@
   width: 22px;
   height: 22px;
   stroke-width: 0;
+  fill: var(--ra-admonition-icon-color);
+  stroke: var(--ra-admonition-icon-color);
 }
 
 .admonition-content > :last-child {
   margin-bottom: 0;
 }
 
-.admonition .admonition-icon svg {
-  stroke: var(--ifm-alert-color);
-  fill: var(--ifm-alert-color);
-}
 
-/* default for custom types */
+/* set variables based on admonition type */
 
 .admonition {
-  --ifm-alert-background-color: var(--ifm-color-primary)
-}
-
-/* styles for native types */
-
-.admonition-important {
-  color: var(--ifm-alert-color);
-  background-color: var(--ifm-alert-background-color);
-  border-color: var(--ifm-alert-background-color)
-}
-
-.admonition-tip {
-  --ifm-alert-background-color: var(--ifm-color-success)
-}
-
-.admonition-important, .admonition-tip {
-  color: var(--ifm-alert-color);
-  background-color: var(--ifm-alert-background-color);
-  border-color: var(--ifm-alert-background-color)
-}
-
-.admonition-important {
-  --ifm-alert-background-color:var(--ifm-color-info)
-}
-
-.admonition-warning {
-  --ifm-alert-background-color:var(--ifm-color-danger)
+  --ra-admonition-background-color: var(--ifm-color-primary);
+  --ra-admonition-icon-color: var(--ra-admonition-color);
 }
 
 .admonition-note {
-  --ifm-alert-background-color:var(--ifm-color-secondary);
-  color: var(--ifm-color-gray-900);
+  --ra-admonition-background-color: var(--ra-color-note);
+  --ra-admonition-color: var(--ra-color-text-dark);
 }
 
-.admonition-note .admonition-icon svg {
-  fill: var(--ifm-color-gray-900);
-  stroke: var(--ifm-color-gray-900);
+.admonition-important {
+  --ra-admonition-background-color: var(--ra-color-important);
 }
 
-.admonition-caution,.admonition-warning {
-  color: var(--ifm-alert-color);
-  background-color: var(--ifm-alert-background-color);
-  border-color: var(--ifm-alert-background-color)
+.admonition-tip {
+  --ra-admonition-background-color: var(--ra-color-tip);
 }
 
 .admonition-caution {
-  --ifm-alert-background-color:var(--ifm-color-warning)
+  --ra-admonition-background-color: var(--ra-color-caution);
+}
+
+.admonition-warning {
+  --ra-admonition-background-color: var(--ra-color-warning);
 }
