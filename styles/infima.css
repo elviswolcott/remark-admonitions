@@ -12,7 +12,7 @@
   --ra-color-tip: var(--ifm-color-success);
   --ra-color-caution: var(--ifm-color-warning);
   --ra-color-warning: var(--ifm-color-danger);
-  --ra-color-text-dark: var(--ifm-color-fray-900);
+  --ra-color-text-dark: var(--ifm-color-gray-900);
 }
 
 /* apply variables to admonitions */
