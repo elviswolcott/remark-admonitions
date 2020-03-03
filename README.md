@@ -93,16 +93,19 @@ const options = {
   customTypes: customTypes, // additional types of admonitions
   tag: string, // the tag to be used for creating admonitions (default ":::")
   icons: "svg"|"emoji"|"none", // the type of icons to use (default "svg")
+  infima: boolean, // wether the classes for infima alerts should be added to the markup
 }
 ```
 
 ## Custom Types
 
-The `customTypes` option can be used to add additional types of admonitions. You can set the svg and emoji icons as well as the keyword. You only have to include the svg/emoji fields if you are using them.
+The `customTypes` option can be used to add additional types of admonitions. You can set the svg and emoji icons as well as the keyword. You only have to include the svg/emoji fields if you are using them. 
+The ifmClass is only necessary if the `infima` setting is `true` and the admonition should use the look of an existing Infima alert class.
 
 ```ts
 const customTypes = {
   [string: keyword]: {
+    ifmClass: string,
     keyword: string,
     emoji: string,
     svg: string,
@@ -130,6 +133,8 @@ customTypes: {
 ```
 
 The generated markup will include the class `admonition-{keyword}` for styling.
+
+If the `infima` option is `true`, the classes `alert alert--{type}` will be added to inherit the default Infima styling.
 
 # Styling
 
