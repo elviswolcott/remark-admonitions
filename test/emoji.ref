@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>This is a test</h1>
-    <div class="admonition admonition-note">
+    <div class="admonition admonition-note alert alert--secondary">
       <div class="admonition-heading">
         <h5>
           <div class="admonition-icon">ℹ️</div>note</h5>
@@ -16,7 +16,7 @@
         <p>This is what a note looks like</p>
       </div>
     </div>
-    <div class="admonition admonition-tip">
+    <div class="admonition admonition-tip alert alert--success">
       <div class="admonition-heading">
         <h5>
           <div class="admonition-icon">💡</div>tip</h5>
@@ -25,7 +25,7 @@
         <p>It works great with docusaurus 2.0</p>
       </div>
     </div>
-    <div class="admonition admonition-caution">
+    <div class="admonition admonition-caution alert alert--warning">
       <div class="admonition-heading">
         <h5>
           <div class="admonition-icon">⚠️</div>you can set <em>your own</em> title</h5>
@@ -34,7 +34,7 @@
         <p>it replaces the default title</p>
       </div>
     </div>
-    <div class="admonition admonition-important">
+    <div class="admonition admonition-important alert alert--info">
       <div class="admonition-heading">
         <h5>
           <div class="admonition-icon">❗️</div>credit</h5>
@@ -44,7 +44,7 @@
         <p>SVG Icons by GitHub Octicons</p>
       </div>
     </div>
-    <div class="admonition admonition-warning">
+    <div class="admonition admonition-warning alert alert--danger">
       <div class="admonition-heading">
         <h5>
           <div class="admonition-icon">🔥</div>warning</h5>
