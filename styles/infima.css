@@ -18,13 +18,20 @@
 /* apply variables to admonitions */
 
 .admonition {
+  margin-bottom: 1em;
+}
+
+.admonition:not(.alert) {
   background-color: var(--ra-admonition-background-color);
   border: var(--ra-admonition-border-width) solid var(--ra-admonition-border-color);
   border-radius: var(--ra-admonition-border-radius);
   box-sizing: border-box;
   color: var(--ra-admonition-color);
   padding: var(--ra-admonition-padding-vertical) var(--ra-admonition-padding-horizontal);
-  margin-bottom: 1em;
+}
+
+.admonition:not(.alert) {
+  --ra-admonition-background-color: var(--ifm-color-primary)
 }
 
 .admonition h5 {
@@ -56,27 +63,9 @@
 /* set variables based on admonition type */
 
 .admonition {
-  --ra-admonition-background-color: var(--ifm-color-primary);
   --ra-admonition-icon-color: var(--ra-admonition-color);
 }
 
 .admonition-note {
-  --ra-admonition-background-color: var(--ra-color-note);
   --ra-admonition-color: var(--ra-color-text-dark);
-}
-
-.admonition-important {
-  --ra-admonition-background-color: var(--ra-color-important);
-}
-
-.admonition-tip {
-  --ra-admonition-background-color: var(--ra-color-tip);
-}
-
-.admonition-caution {
-  --ra-admonition-background-color: var(--ra-color-caution);
-}
-
-.admonition-warning {
-  --ra-admonition-background-color: var(--ra-color-warning);
 }
