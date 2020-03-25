@@ -1,6 +1,6 @@
 {
   "name": "remark-admonitions",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Add admonitions support to remark",
   "main": "lib/index.js",
   "scripts": {
