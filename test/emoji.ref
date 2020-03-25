@@ -9,8 +9,7 @@
     <h1>This is a test</h1>
     <div class="admonition admonition-note alert alert--secondary">
       <div class="admonition-heading">
-        <h5>
-          <div class="admonition-icon">ℹ️</div>note</h5>
+        <h5><span class="admonition-icon">ℹ️</span>note</h5>
       </div>
       <div class="admonition-content">
         <p>This is what a note looks like</p>
@@ -18,8 +17,7 @@
     </div>
     <div class="admonition admonition-tip alert alert--success">
       <div class="admonition-heading">
-        <h5>
-          <div class="admonition-icon">💡</div>tip</h5>
+        <h5><span class="admonition-icon">💡</span>tip</h5>
       </div>
       <div class="admonition-content">
         <p>It works great with docusaurus 2.0</p>
@@ -27,8 +25,7 @@
     </div>
     <div class="admonition admonition-caution alert alert--warning">
       <div class="admonition-heading">
-        <h5>
-          <div class="admonition-icon">⚠️</div>you can set <em>your own</em> title</h5>
+        <h5><span class="admonition-icon">⚠️</span>you can set <em>your own</em> title</h5>
       </div>
       <div class="admonition-content">
         <p>it replaces the default title</p>
@@ -36,8 +33,7 @@
     </div>
     <div class="admonition admonition-important alert alert--info">
       <div class="admonition-heading">
-        <h5>
-          <div class="admonition-icon">❗️</div>credit</h5>
+        <h5><span class="admonition-icon">❗️</span>credit</h5>
       </div>
       <div class="admonition-content">
         <p>Based on <code>remarkable-admonitions</code></p>
@@ -46,8 +42,7 @@
     </div>
     <div class="admonition admonition-warning alert alert--danger">
       <div class="admonition-heading">
-        <h5>
-          <div class="admonition-icon">🔥</div>warning</h5>
+        <h5><span class="admonition-icon">🔥</span>warning</h5>
       </div>
       <div class="admonition-content">
         <p>You can't nest them</p>
@@ -65,8 +60,7 @@
     </div>
     <div class="admonition admonition-custom">
       <div class="admonition-heading">
-        <h5>
-          <div class="admonition-icon">💻</div>custom</h5>
+        <h5><span class="admonition-icon">💻</span>custom</h5>
       </div>
       <div class="admonition-content">
         <p>You can make your own custom types. The icon, keyword, and emoji can be set in the plugin options and they can be styled separately.</p>
