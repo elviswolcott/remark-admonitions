@@ -9,7 +9,7 @@
     <h1>This is a test</h1>
     <div class="admonition admonition-note alert alert--secondary">
       <div class="admonition-heading">
-        <h5><span class="admonition-icon">ℹ️</span>note</h5>
+        <h5><span class="admonition-icon">ℹ️</span>Note</h5>
       </div>
       <div class="admonition-content">
         <p>This is what a note looks like</p>
@@ -17,7 +17,7 @@
     </div>
     <div class="admonition admonition-tip alert alert--success">
       <div class="admonition-heading">
-        <h5><span class="admonition-icon">💡</span>tip</h5>
+        <h5><span class="admonition-icon">💡</span>Tip</h5>
       </div>
       <div class="admonition-content">
         <p>It works great with docusaurus 2.0</p>
@@ -42,7 +42,7 @@
     </div>
     <div class="admonition admonition-warning alert alert--danger">
       <div class="admonition-heading">
-        <h5><span class="admonition-icon">🔥</span>warning</h5>
+        <h5><span class="admonition-icon">🔥</span>Warning</h5>
       </div>
       <div class="admonition-content">
         <p>You can't nest them</p>
@@ -60,7 +60,7 @@
     </div>
     <div class="admonition admonition-custom">
       <div class="admonition-heading">
-        <h5><span class="admonition-icon">💻</span>custom</h5>
+        <h5><span class="admonition-icon">💻</span>Custom</h5>
       </div>
       <div class="admonition-content">
         <p>You can make your own custom types. The icon, keyword, and emoji can be set in the plugin options and they can be styled separately.</p>
