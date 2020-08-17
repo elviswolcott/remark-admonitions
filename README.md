@@ -79,7 +79,7 @@ For example,
 ```
 
 
-The default keywords are `important`, `tip`, `note`, `warning`, and `danger`.
+The default keywords are `important`, `tip`, `note`, `warning`, and `caution`.
 Aliases for `info` => `important`, `success` => `tip`, `secondary` => `note` and `danger` => `warning` have been added for Infima compatibility.
 
 # Options
