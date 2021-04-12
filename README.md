@@ -56,10 +56,10 @@ unified()
 
 `@docusaurus/preset-classic` includes `remark-admonitions`.
 
-If you aren't using `@docusaurus/preset-classic`, `remark-admonitions` can still be used through passing a `remark` plugin to MDX. 
+If you aren't using `@docusaurus/preset-classic`, `remark-admonitions` can still be used through passing a `remark` plugin to MDX.
 # Usage
 
-Admonitions are a block element. 
+Admonitions are a block element.
 The titles can include inline markdown and the body can include any block markdown except another admonition.
 
 The general syntax is
@@ -94,12 +94,13 @@ const options = {
   tag: string, // the tag to be used for creating admonitions (default ":::")
   icons: "svg"|"emoji"|"none", // the type of icons to use (default "svg")
   infima: boolean, // wether the classes for infima alerts should be added to the markup
+  useKeywordAsTitle: boolean, // whether keyword is used as default title if title was not provided (default true)
 }
 ```
 
 ## Custom Types
 
-The `customTypes` option can be used to add additional types of admonitions. You can set the svg and emoji icons as well as the keyword. You only have to include the svg/emoji fields if you are using them. 
+The `customTypes` option can be used to add additional types of admonitions. You can set the svg and emoji icons as well as the keyword. You only have to include the svg/emoji fields if you are using them.
 The ifmClass is only necessary if the `infima` setting is `true` and the admonition should use the look of an existing Infima alert class.
 
 ```ts
@@ -138,7 +139,7 @@ If the `infima` option is `true`, the classes `alert alert--{type}` will be adde
 
 # Styling
 
-You'll have to add styles for the admonitions. With Docusaurus, these can be added to `custom.css`. 
+You'll have to add styles for the admonitions. With Docusaurus, these can be added to `custom.css`.
 
 ## Infima (Docusaurus v2)
 
