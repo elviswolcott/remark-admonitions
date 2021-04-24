@@ -8,42 +8,32 @@
   <body>
     <h1>This is a test</h1>
     <div class="admonition admonition-note alert alert--secondary">
-      <div class="admonition-heading">
-        <h5>Note</h5>
-      </div>
+      <div class="admonition-heading">Note</div>
       <div class="admonition-content">
         <p>This is what a note looks like</p>
       </div>
     </div>
     <div class="admonition admonition-tip alert alert--success">
-      <div class="admonition-heading">
-        <h5>Tip</h5>
-      </div>
+      <div class="admonition-heading">Tip</div>
       <div class="admonition-content">
         <p>It works great with docusaurus 2.0</p>
       </div>
     </div>
     <div class="admonition admonition-caution alert alert--warning">
-      <div class="admonition-heading">
-        <h5>you can set <em>your own</em> title</h5>
-      </div>
+      <div class="admonition-heading">you can set <em>your own</em> title</div>
       <div class="admonition-content">
         <p>it replaces the default title</p>
       </div>
     </div>
     <div class="admonition admonition-important alert alert--info">
-      <div class="admonition-heading">
-        <h5>credit</h5>
-      </div>
+      <div class="admonition-heading">credit</div>
       <div class="admonition-content">
         <p>Based on <code>remarkable-admonitions</code></p>
         <p>SVG Icons by GitHub Octicons</p>
       </div>
     </div>
     <div class="admonition admonition-warning alert alert--danger">
-      <div class="admonition-heading">
-        <h5>Warning</h5>
-      </div>
+      <div class="admonition-heading">Warning</div>
       <div class="admonition-content">
         <p>You can't nest them</p>
         <ul>
@@ -59,9 +49,7 @@
       </div>
     </div>
     <div class="admonition admonition-custom">
-      <div class="admonition-heading">
-        <h5>Custom</h5>
-      </div>
+      <div class="admonition-heading">Custom</div>
       <div class="admonition-content">
         <p>You can make your own custom types. The icon, keyword, and emoji can be set in the plugin options and they can be styled separately.</p>
       </div>
