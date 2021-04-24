@@ -34,9 +34,10 @@
   --ra-admonition-background-color: var(--ifm-color-primary)
 }
 
-.admonition h5 {
-  margin-top: 0;
-  margin-bottom: 8px;
+.admonition-heading {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
   text-transform: uppercase;
 }
 
