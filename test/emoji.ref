@@ -66,5 +66,21 @@
         <p>You can make your own custom types. The icon, keyword, and emoji can be set in the plugin options and they can be styled separately.</p>
       </div>
     </div>
+    <div class="admonition admonition-info alert alert--info">
+      <div class="admonition-heading">
+        <h5><span class="admonition-icon">❗️</span>nested admonitions</h5>
+      </div>
+      <div class="admonition-content">
+        <p>Admonitions can be nested.</p>
+        <div class="admonition admonition-success alert alert--success">
+          <div class="admonition-heading">
+            <h5><span class="admonition-icon">💡</span>Success</h5>
+          </div>
+          <div class="admonition-content">
+            <p>it works!</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

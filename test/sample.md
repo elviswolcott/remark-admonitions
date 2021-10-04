@@ -34,3 +34,10 @@ You can't nest them
 :::custom
 You can make your own custom types. The icon, keyword, and emoji can be set in the plugin options and they can be styled separately.
 :::
+
+:::info nested admonitions
+Admonitions can be nested.
+:::success
+it works!
+:::
+:::
