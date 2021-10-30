@@ -25,7 +25,7 @@
     </div>
     <div class="admonition admonition-caution alert alert--warning">
       <div class="admonition-heading">
-        <h5><span class="admonition-icon">⚠️</span>you can set <em>your own</em> title</h5>
+        <h5 id="you-can-set-your-own-title"><span class="admonition-icon">⚠️</span>you can set <em>your own</em> title</h5>
       </div>
       <div class="admonition-content">
         <p>it replaces the default title</p>
@@ -33,7 +33,7 @@
     </div>
     <div class="admonition admonition-important alert alert--info">
       <div class="admonition-heading">
-        <h5><span class="admonition-icon">❗️</span>credit</h5>
+        <h5 id="credit"><span class="admonition-icon">❗️</span>credit</h5>
       </div>
       <div class="admonition-content">
         <p>Based on <code>remarkable-admonitions</code></p>
@@ -45,9 +45,9 @@
         <h5><span class="admonition-icon">🔥</span>Warning</h5>
       </div>
       <div class="admonition-content">
-        <p>You can't nest them</p>
+        <p>You can nest them</p>
         <ul>
-          <li>but</li>
+          <li>and</li>
           <li>you</li>
           <li>can</li>
           <li>nest</li>
@@ -68,7 +68,7 @@
     </div>
     <div class="admonition admonition-info alert alert--info">
       <div class="admonition-heading">
-        <h5><span class="admonition-icon">❗️</span>nested admonitions</h5>
+        <h5 id="nested-admonitions"><span class="admonition-icon">❗️</span>nested admonitions</h5>
       </div>
       <div class="admonition-content">
         <p>Admonitions can be nested.</p>

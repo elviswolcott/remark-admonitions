@@ -18,8 +18,8 @@ SVG Icons by GitHub Octicons
 :::
 
 :::warning
-You can't nest them
-* but
+You can nest them
+* and
 * you
 * can
 * nest
