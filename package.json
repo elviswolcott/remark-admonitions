@@ -1,5 +1,5 @@
 {
-  "name": "remark-admonitions",
+  "name": "@lebalz/remark-admonitions",
   "version": "1.2.2",
   "description": "Add admonitions support to remark",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elviswolcott/remark-admonitions.git"
+    "url": "git+https://github.com/lebalz/remark-admonitions.git"
   },
   "keywords": [
     "remark",
@@ -28,9 +28,9 @@
   "author": "Elvis Wolcott",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elviswolcott/remark-admonitions/issues"
+    "url": "https://github.com/lebalz/remark-admonitions/issues"
   },
-  "homepage": "https://github.com/elviswolcott/remark-admonitions#readme",
+  "homepage": "https://github.com/lebalz/remark-admonitions#readme",
   "dependencies": {
     "rehype-parse": "^6.0.2",
     "unified": "^8.4.2",
@@ -53,5 +53,9 @@
     "remark-rehype": "^5.0.0",
     "to-vfile": "^6.0.0",
     "vfile-reporter": "^6.0.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }

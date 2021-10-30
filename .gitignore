@@ -4,3 +4,4 @@ node_modules
 test/*.html
 # editor configuration files
 .vscode
+.DS_Store

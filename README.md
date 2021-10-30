@@ -1,6 +1,10 @@
-[![Travis (.com)](https://img.shields.io/travis/com/elviswolcott/remark-admonitions?logo=travis)](https://travis-ci.com/elviswolcott/remark-admonitions)
-[![npm](https://img.shields.io/npm/v/remark-admonitions?label=remark-admonitions&logo=npm)](https://www.npmjs.com/package/remark-admonitions)
+[![Travis (.com)](https://img.shields.io/travis/com/lebalz/remark-admonitions?logo=travis)](https://travis-ci.com/lebalz/remark-admonitions)
+[![npm](https://img.shields.io/npm/v/@lebalz/remark-admonitions?label=@lebalz/remark-admonitions&logo=npm)](https://www.npmjs.com/package/@lebalz/remark-admonitions)
 # remark-admonitions
+
+Since the []() Repository seems to be unmaintained, this package with support of nested admonitions was released (adds [this PR](https://github.com/elviswolcott/remark-admonitions/issues/41)).
+
+This package adds support for nested admonitions (or other remark plugins which have a `:::` markup).
 
 > A [remark](https://github.com/remarkjs/remark) plugin for admonitions designed with Docusaurus v2 in mind.
 

@@ -8,19 +8,6 @@ jobs:
     script: npm test
   - stage: lint
     script: npm run lint
-  - stage: release
-    if: type = push AND tag IS present
-    install: true
-    script: skip
-    deploy:
-      provider: npm
-      email: elviswolcott@gmail.com
-      api_key:
-        secure: lNF+2FSZU0EsH9jerhWYbZT9dKiO1Kfz2NPuA/mSk5UkVTOQC+8A9ufkyF9kkwcDgBXvxsUcI0OM9C0wQatE2DIqGNOo9YzkUfF7zcxC63Nb878alp6tcVDflRIP/a5X3la5loq7uxEPD/8JJICt54Y6OJBW8GlZ8+ZvtlZzba8ZIW3G6JEBh1mXH1ZGBCbRuVw7kLaFe7E1VEgYHLIcAm6bVB8DvK4Kqtjx4karv8y8+u2NMV+qj9QkrqHpqTfcwNqbQXmKJIcdX42tC4f8ImweeE4Jvv0s6bg76FTuOR1O4yTp+8gUplZqdP6JWJj3OS3RaooYrrUqN4d7ZJ5z8u3yvzu8LrVfQmruza+TkixNLKzQfGwAxPtt/Rc/VWyG3aJNcz8AkAyufnLX/OOT6XR2oBSZtB9Dhk7OcZeKu9ZpLg9J8Z73weWJipCYsVefnxEVg01fzqrfeKBC1jBeuOEe3IEcMkczpxDAp4o5wpyc7KaHdcWTFzasOIWjb/XNgQ6JRylIDD+Zg9HiQjzKodE3hDELMypRHVBD2a9sdxO2pNIpBSvf7LAJAz5okxl1+y2S9Hn6+aNEL0aMMP0pxBi4A28vVc4oSVHy4Uz1mKaJSj1z6BWxZ0N06CKAoDe8GjWi3ycimRvU86nGIUOWJ/eBVNRuqNdFmRW4+zVs6WU=
-      on:
-        tags: true
-        repo: elviswolcott/remark-admonitions
-        branch: master
 stages:
 - test
 - lint
