@@ -1,10 +1,43 @@
-[![Travis (.com)](https://img.shields.io/travis/com/lebalz/remark-admonitions?logo=travis)](https://travis-ci.com/lebalz/remark-admonitions)
+[![Node.js CI](https://github.com/lebalz/remark-admonitions/actions/workflows/node.js.yml/badge.svg)](https://github.com/lebalz/remark-admonitions/actions/workflows/node.js.yml)
 [![npm](https://img.shields.io/npm/v/@lebalz/remark-admonitions?label=@lebalz/remark-admonitions&logo=npm)](https://www.npmjs.com/package/@lebalz/remark-admonitions)
+
 # remark-admonitions
 
-Since the []() Repository seems to be unmaintained, this package with support of nested admonitions was released (adds [this PR](https://github.com/elviswolcott/remark-admonitions/issues/41)).
+Since [remark-admonitions](https://github.com/elviswolcott/remark-admonitions) seems to be unmaintained, this package adds support of nested admonitions (adds [this PR](https://github.com/elviswolcott/remark-admonitions/issues/41)).
 
 This package adds support for nested admonitions (or other remark plugins which have a `:::` markup).
+
+```bash
+npm install @lebalz/remark-admonitions
+```
+
+or
+
+```bash
+yarn add @lebalz/remark-admonitions
+```
+
+To use in docusaurus, edit your config as follows:
+
+```js
+const admonitions = require('@lebalz/remark-admonitions');
+
+module.exports = {
+  presets: [
+    //...,
+    admonitions: false,
+    remarkPlugins: [
+      //...,
+      [admonitions, { /* options */]
+    ]
+  ]
+}
+```
+
+
+Credits to [@elviswolcott](https://github.com/elviswolcott) who built the original `remark-admonitions` plugin.
+
+---
 
 > A [remark](https://github.com/remarkjs/remark) plugin for admonitions designed with Docusaurus v2 in mind.
 
@@ -17,7 +50,7 @@ This package adds support for nested admonitions (or other remark plugins which 
 `remark-admonitions` is available on NPM.
 
 ```bash
-npm install remark-admonitions
+npm install @lebalz/remark-admonitions
 ```
 
 ## unified + remark
